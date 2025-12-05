@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Student Fix</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Student Fix</a>
+            <button class="burger-menu" aria-label="Menu">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Nos Services</a></li>
+                    <li><a href="about.html">Le Projet</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero" style="padding: 4rem 1.5rem;">
+        <img src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260" alt="Campus universitaire" class="hero-bg" loading="eager">
+        <div class="hero-content">
+            <h1>Besoin d'une réparation ?</h1>
+            <p>Retrouve-nous sur ton campus ou envoie-nous un message.</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="grid" style="grid-template-columns: 1fr 2fr;">
+            <div class="card">
+                <div class="card-content">
+                    <h3>📍 Nos Permanences</h3>
+                    <p style="margin-bottom: 1rem;">Nous sommes présents entre 12h et 14h :</p>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><strong>UT1 Capitole :</strong><br>Hall Principal (Arsenal)</li>
+                        <li style="margin-bottom: 10px;"><strong>UT2 Jean Jaurès :</strong><br>Maison de l'Étudiant</li>
+                        <li style="margin-bottom: 10px;"><strong>UT3 Paul Sabatier :</strong><br>Sortie Métro</li>
+                    </ul>
+                    <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid #eee;">
+                    <p>📧 contact@studentfix.fr</p>
+                    <p>📞 06 00 00 00 00</p>
+                </div>
+            </div>
+
+            <form action="#" method="post">
+                <h3 style="margin-bottom: 1.5rem; color: var(--primary-color);">Demande de devis / RDV</h3>
+                
+                <div style="display: flex; gap: 1rem;">
+                    <div style="flex: 1;">
+                        <label for="name">Ton Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="email">Ton Email Université</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <label for="campus">Ton Campus</label>
+                <select id="campus" name="campus">
+                    <option value="ut1">UT1 Capitole</option>
+                    <option value="ut2">UT2 Jean Jaurès</option>
+                    <option value="ut3">UT3 Paul Sabatier</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <label for="message">Décris ton problème (Modèle, Panne...)</label>
+                <textarea id="message" name="message" rows="5" placeholder="Ex: Mon iPhone X ne charge plus..." required></textarea>
+
+                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Envoyer ma demande</button>
+            </form>
+        </div>
+    </main>
+
+    <footer><div class="container"><p>&copy; 2025 Student Fix.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">Site éco-conçu pour réduire l'empreinte carbone.</p>
+</div></footer>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
